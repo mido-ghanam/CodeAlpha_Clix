@@ -4,7 +4,7 @@ from shortener import models as m
 from django.urls import reverse
 
 def index(request): #f"{PublishedURL}/"
-  return render(request, "index.html", {"shortAPI": PublishedURL + "/" + reverse("shortLinkCreateAPI"),})
+  return render(request, "index.html", {"shortAPI": PublishedURL + reverse("shortLinkCreateAPI"),})
 
 def routing(request, short_code):
   ShortURL = m.ShortURL.objects.filter(short_code=short_code).first()
