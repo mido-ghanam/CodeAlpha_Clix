@@ -3,3 +3,4 @@ djangorestframework
 PyJWT
 django-cors-headers
 djangorestframework-simplejwt
+whitenoise
