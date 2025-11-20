@@ -1,8 +1,9 @@
-from django.urls import path, include
+from shortener.views import web
+from django.urls import path
 from . import *
 
 urlpatterns = [
-  #path('api/', include("shortener.urls.api")),
-  #path('', include("shortener.urls.web")),
-  #path('', include("shortern.urls")),
+  path('', web.index, name="index"),
+  path('<str:short_code>', web.routing, name="routing"),
+
 ]
