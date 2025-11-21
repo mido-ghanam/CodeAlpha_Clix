@@ -15,6 +15,7 @@ SECRET_KEY = 'django-insecure-wh2^tqb_y7s*$i-84@t!+hefdr1w-cxh$gi-ep2zbd8=en1)@9
 DEBUG = False
 
 ALLOWED_HOSTS = [
+  "101.44.43.76",
   "localhost",
   "127.0.0.1",
   "clix.codealpha.internships.midoghanam.site",
